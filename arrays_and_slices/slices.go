@@ -7,6 +7,12 @@ import (
 func main() {
 
 	myCourses := make([]string, 5, 10)
+	myCourse2 := []string{"Go Fundamentals", "F# Jumpstart", "TDD with F#"}
 
-	fmt.Printf("Length is: %d.\nCapacity is: %d.", len(myCourses), cap(myCourses))
+	printSliceDetails(myCourses)
+	printSliceDetails(myCourse2)
+}
+
+func printSliceDetails(slice []string) {
+	fmt.Printf("\nLength is: %d.\nCapacity is: %d.", len(slice), cap(slice))
 }
