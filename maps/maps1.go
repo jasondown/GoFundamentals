@@ -12,4 +12,13 @@ func main() {
 		fmt.Printf("\nKey is: %v Value is: %v", key, value)
 	}
 
+	fmt.Println("\nC is:", testMap["C"])
+
+	testMap["A"] = 100
+	testMap["Jason"] = 39
+	fmt.Println(testMap)
+
+	fmt.Println("Deleting Jason...noooooooooo")
+	delete(testMap, "Jason")
+	fmt.Println(testMap)
 }
